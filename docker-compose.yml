@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  converter:
+    image: converter:latest
+    container_name: converter
+    restart: always
+    networks:
+      - web
+    expose:
+      - 8080
+    labels:
+      - traefik.enable=true
+      - traefik.backend=converter
+      - traefik.docker.network=web
+      - traefik.frontend.rule=Host:converter.dev.YOURDOMAIN.com
+      - traefik.port=8080
+
+networks:
+  web:
+    external:
+      name: web
+  default:
+    driver: bridge

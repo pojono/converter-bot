@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "adm-zip": "0.4.16",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "telebot": "1.4.1"
+  },
+  "scripts": {
+    "build": "docker build -t converter .",
+    "up": "docker run -p 8080:8060 -d converter:latest",
+    "go": "yarn build && yarn startd && docker ps"
+  }
+}
