@@ -1,4 +1,8 @@
 # README #
+
+Бот для конвертирования аудиофайлов
+
+
 git clone https://github.com/pojono/converter-bot.git
 cd converter-bot
 
