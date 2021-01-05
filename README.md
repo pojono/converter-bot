@@ -14,6 +14,7 @@ cd converter-bot
 set domain in docker-compose.yml
 set domain in app.js
 set token in telegram.js
+(Как получить токен: https://core.telegram.org/bots)
 
 
 3. Собрать docker образ и запустить его
